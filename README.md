@@ -24,7 +24,10 @@ graph TD;
   new-->gender(["Choisir Genre"]);
   gender-->male[/Homme/];
   gender-->female[\Femme\];
-  female-->start["Début du jeu"]
+  female-->start["Début du jeu"];
+  start-->quest["Commencer première quête"];
+  quest-- Si tu es une femme-->Quête#1
+  quest-- Si tu es un homme-->Quête#2
   male-->start
   load-->start
 
