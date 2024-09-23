@@ -9,18 +9,20 @@
     <meta name="description" content="Présentation Set-Sun-Rise">
     <title>PL Scénarisation</title>
 
-  
-<!-- stylesheets -->
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css" disabled>
 
-<!-- docsify-simple-dark-mode plugin -->
-<script src="https://cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/src/switchLightDarkMode.js"></script>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css" disabled>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/dark.css">
+
+    <!-- docsify-simple-dark-mode plugin -->
+    <script
+        src="https://cdn.jsdelivr.net/gh/pikapikapikaori/docsify-simple-dark-mode@latest/src/switchLightDarkMode.js">
+    </script>
 
     <!-- Custom Styles -->
     <style>
         :root {
-            --theme-hue:2;
+            --theme-hue: 2;
         }
     </style>
 
@@ -28,61 +30,33 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <nav>
+        <a href="#/">FR &colon;fr&colon;</a><br><br>
+        <a href="#/en/">EN &colon;en&colon;</a>
+    </nav>
+    <section>
+        <div id="app"></div>
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+        <!-- Emoji Plugin-->
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>
+        <!-- Required -->
+        <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 
-    <script>
-        window.$docsify = {
-            name: 'pl_scenarisation',
-            repo: 'https://github.com/Timingmerkat83/pl_scenarisation/edit/main/README.md',
-    
-            auto2top: true,
-            loadSidebar: true,    // disable sidebar loading
-            subMaxLevel: 4,       // Adjust the level to include in TOC
-            copyCode: {
-                buttonText: '📄',
-                errorText: '⚠️',
-                successText: '✅ ',
-            },
-            plugins: [
-                // Lightbox plugin
-                function (hook, vm) {
-                    hook.doneEach(() => {
-                        import('https://gllmar.github.io/docsify-lightbox/docsify-lightbox.js').then(module => {
-                            const images = document.querySelectorAll('img');
-                            const lightbox = new module.default();
-                            lightbox.initialize(images);
-                        }).catch(err => console.error('Failed to load Lightbox plugin', err));
-                    });
-                },
-                // WaveSurfer plugin
-                function (hook, vm) {
-                    hook.doneEach(() => {
-                        import('https://gllmar.github.io/docsify-wavesurfer-plugin/docsify-wavesurfer-plugin.js').then(module => {
-                            module.initWaveSurfer();
-                        }).catch(err => console.error('Failed to load WaveSurfer plugin', err));
-                    });
-                }
-            ]
-        };
-    </script>
-
-    
-
-    <!-- Required -->
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-
-    <!-- Import Mermaid -->
-    <script type="module">
-        import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+        <!-- Import Mermaid -->
+        <script type="module">
+            import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
         mermaid.initialize({ startOnLoad: true });
         window.mermaid = mermaid;
     </script>
-    <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
-    <script src="https://gllmar.github.io/docsify-unhashtaglink/docsify-unhashtaglink.js"></script>
-    <script src="https://gllmar.github.io/docsify-alert/docsify-alerts.js"></script>
-    <script src="https://gllmar.github.io/docsify-repo-toolbar/docsify-repo-toolbar.js"></script>
+        <script src="script.js"></script>
+        <script src="//unpkg.com/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/external-script.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+        <script src="https://gllmar.github.io/docsify-unhashtaglink/docsify-unhashtaglink.js"></script>
+        <script src="https://gllmar.github.io/docsify-alert/docsify-alerts.js"></script>
+        <script src="https://gllmar.github.io/docsify-repo-toolbar/docsify-repo-toolbar.js"></script>
+    </section>
 </body>
 
 </html>

@@ -1,11 +1,25 @@
 # Scénariser l'interactivité
 
 
-```mermaid
+## Idée
 
+## Moodboard
+
+## Technologie
+
+```mermaid
+---
+title: Mon graphique de mon scénarimage
+---
 graph TD;
-  A-->B;
-  A-->C;
-  B-->D;
-  C-->D;
+  markdown["Démarrage du jeu"]--> menu["Menu principal"];
+  menu-->new["Nouvelles partie"];
+  menu-->load["Charger partie"];
+  new-->gender(["Choisir Genre"]);
+  gender-->male[/Homme/];
+  gender-->female[\Femme\];
+  female-->start["Début du jeu"]
+  male-->start
+  load-->start
 ```
+
