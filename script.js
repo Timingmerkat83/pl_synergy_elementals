@@ -4,6 +4,8 @@ window.$docsify = {
 
     auto2top: true,
     loadSidebar: false,    // disable sidebar loading
+    autoHeader: true,
+    fallbackLanguages: ['fr', 'en'],
     loadNavbar: false,
     nativeEmoji: true,
     subMaxLevel: 4,       // Adjust the level to include in TOC
@@ -12,6 +14,14 @@ window.$docsify = {
         errorText: '⚠️',
         successText: '✅ ',
     },
+    share: {
+            reddit: true,
+            linkedin: true,
+            facebook: true,
+            twitter: true,
+            whatsapp: true,
+            telegram: true,
+        },
     plugins: [
         // Lightbox plugin
         function (hook, vm) {
