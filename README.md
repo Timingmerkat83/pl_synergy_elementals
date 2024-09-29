@@ -2,16 +2,24 @@
 
 ## Idée
 
-Mon idée de crée un **environnement** où le joueur a le choix de choisir son _genre_, chaque aurait leur propre système de jeu différent.
+Mon idée de crée un **environnement** où le joueur a le choix de choisir l'élément qu'ils préfèrent, chaqu'un éléments auraient leur propre attribut différent.
+
 ## Scénario
 
-Dans un monde fantstique où les éléments (Terre, air, feu, eau) sont tous protégé par un **Gardien**. Mais suite à un événement mystérieux, l'équilibre de ces éléments sont instable et les Gardiens sont corrompu par une force obscure. Le joueur incarne un Gardien survivant qui doit restaurer l'harmonie. Le choix entre un personnage masculin et un personnage féminin influencerait le style de jeu et les interactions.
+Dans un monde fantstique où les éléments (Terre, air, feu, eau) sont tous protégé par un **Gardien**. Mais suite à un événement mystérieux, l'équilibre de ces éléments sont instable et les Gardiens sont corrompu par une force obscure. Le joueur incarne un Gardien survivant qui doit restaurer l'harmonie. Le choix l'eau, le feu, la terre et l'air influencerait le style de jeu et les interactions.
+
+Le jeu étant constitué de 4 niveaux différents, dont ces niveaux représentront un égnigme pour chaque éléments.
 
 ## Moodboard
-!
+
+![moodboard](img/Scénarimage.png)
 
 ## Technologie
-La technologie qui sera utilisé serait principalement Unity.
+
+La technologie qui sera utilisé:
+
+- Unity pour le visuel.
+- Reaper pour le son des éléments
 
 ```mermaid
 ---
@@ -26,8 +34,11 @@ graph TD;
   gender-->female[\Femme\];
   female-->start["Début du jeu"];
   start-->quest["Commencer première quête"];
-  quest-- Si tu es une femme-->Quête#1
-  quest-- Si tu es un homme-->Quête#2
+  quest-- Si tu es une femme-->Element(["Choisi ton élément: Feu, Eau, Terre, Air"])
+  quest-- Si tu es un homme-->Element
+  Quête#1-->Quête#2["La terre"]
+  Quête#2-->Quête#3["L'eau"]
+  Quête#3-->Quête#4["Le feu"]
   male-->start
   load-->start
 
