@@ -1,8 +1,8 @@
-# Présentation d'une scénarisation d'un projet multimédia
+# Présentation d'une scénarisation d'un projet multimédia : Elemental Synergy
 
-## Idée
+## Idée de l'oeuvre
 
-Mon idée de crée un **environnement** où le joueur a le choix de choisir l'élément qu'ils préfèrent, chaqu'un éléments auraient leur propre attribut différent.
+L'idée derrière Elemental Synergy est de crée un **environnement** où le joueur a le choix de choisir l'élément qu'ils préfèrent, chaqu'un éléments auraient leur propre attribut différent.
 
 ## Scénario
 
