@@ -24,24 +24,35 @@ graph TD;
   gender-->male[/Homme/];
   gender-->female[\Femme\];
   female-->start["Début du jeu"];
-  start-->quest["Commencer première quête"];
-  quest-- Si tu es une femme-->Element(["Choisi ton élément: Feu, Eau, Terre, Air"])
-  quest-- Si tu es un homme-->Element
-  Element-->Niveau#1["Niveau #1 L'air"]
-  Niveau#1-->Quête#2["Niveau #2 La terre"]
-  Quête#2-->Quête#3["Niveau #3 L'eau"]
-  Quête#3-->Quête#4["Niveau #4 Le feu"]
-  Quête#4-->Ending["Fin du jeu"]
+  male-->start;
+  
+  start==>quest["Commencer première quête"];
+  quest--->Element(["Choisi ton élément: Feu, Eau, Terre, Air"])
+  Element-->air["Niveau #1 L'air"]
+  subgraph jeu
+  air-->levelair("Trouver un moyen de retirer l'air toxique avec ton élément choisi")
+  levelair--Si tu es un **homme** -->terre["Niveau #2 La terre"]
+  terre-->levelearth("L'environnement est en feu, trouve un moyen d'éteindre de l'éteindre")
+  levelair--Si tu es une **femme**-->eau["Niveau #3 L'eau"]
+  eau-->levelwater("Les rivières du village sont gelée et il manque d'eau dans certaines rivières, trouve un moyen de rétablir ces rivières")
+  terre<-->eau
+  levelwater & levelearth-->feu["Niveau #4 Le feu"]
+  feu-->levelfire("La ville est inondée! Trouve un moyen de mettre cet eau à sec")
+  end
+  gameover-->menu
+  levelair & levelearth & levelwater & levelfire --Égnime échoué-->gameover["Fin de la partie"]
+  levelfire-->epilogue((("La balance entre les éléments a été restauré")))
+  epilogue-->Ending{"Fin du jeu"}
   Ending--Recommencer partie?-->menu
-  male-->start
   load-->start
+
 
   style female fill:#e497f2
   style male fill:#30c5f3
-  style Niveau#1 fill: #E7F1F5
-  style Quête#2 fill: #B07C57
-  style Quête#3 fill: #005493
-  style Quête#4 fill: #FF7500
+  style air fill: #E7F1F5
+  style terre fill: #B07C57
+  style eau fill: #005493
+  style feu fill: #FF7500
   style menu fill: #ff7270, stroke: red, stroke-width: 5px
   linkStyle default stroke: blue 
 
