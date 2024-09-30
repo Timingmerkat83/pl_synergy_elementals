@@ -38,8 +38,12 @@ graph TD;
 
   style female fill:#e497f2
   style male fill:#30c5f3
+  style Niveau#1 fill: #E7F1F5
+  style Quête#2 fill: #B07C57
+  style Quête#3 fill: #005493
+  style Quête#4 fill: #FF7500
   style menu fill: #ff7270, stroke: red, stroke-width: 5px
-  linkStyle default stroke: white
+  linkStyle default stroke: blue 
 
 ```
 
