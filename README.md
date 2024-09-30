@@ -26,19 +26,19 @@ graph TD;
   female-->start["Début du jeu"];
   male-->start;
   start==>quest["Commencer première quête"];
-  quest--->Element(["Choisi ton élément: Feu, Eau, Terre, Air"])
+  quest-->Element(["Choisi ton élément: <br>Feu,<br> Eau,<br> Terre,<br> Air"])
   Element-->air["Niveau #1 L'air"]
-  air-->levelair("Trouver un moyen de retirer l'air toxique avec ton élément choisi")
+  air-->levelair("Trouver un moyen de retirer <br>l'air toxique avec ton élément choisi")
   levelair--Si tu es un **homme** -->terre["Niveau #2 La terre"]
-  terre-->levelearth("L'environnement est en feu, trouve un moyen d'éteindre de l'éteindre")
+  terre--->levelearth("L'environnement est en feu,<br> trouve un moyen d'éteindre de l'éteindre")
   levelair--Si tu es une **femme**-->eau["Niveau #3 L'eau"]
-  eau-->levelwater("Les rivières du village sont gelée et il manque d'eau dans certaines rivières, trouve un moyen de rétablir ces rivières")
+  eau------>levelwater("Les rivières du village sont gelée <br> et il manque d'eau <br>dans certaines rivières,<br> trouve un moyen de rétablir ces rivières")
   terre<-->eau
   levelwater & levelearth-->feu["Niveau #4 Le feu"]
-  feu-->levelfire("La ville est inondée! Trouve un moyen de mettre cet eau à sec")
+  feu-->levelfire("La ville est inondée! <br>Trouve un moyen de mettre cet eau à sec")
   gameover-->menu
   levelair & levelearth & levelwater & levelfire --Égnime échoué-->gameover["Fin de la partie"]
-  levelfire-->epilogue((("La balance entre les éléments a été restauré")))
+  levelfire-->epilogue(("La balance entre les éléments <br> a été restauré"))
   epilogue-->Ending{"Fin du jeu"}
   Ending--Recommencer partie?-->menu
   load-->start
