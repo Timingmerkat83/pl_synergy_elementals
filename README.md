@@ -18,7 +18,6 @@ title: Mon graphique de mon scénarimage
 ---
 graph TD;
   markdown["Démarrage du jeu"]--> menu(Menu principal)
-subgraph Menu
   menu-->new["Nouvelle partie"];
   menu-- Partie déjà créé?-->load["Charger partie"];
   new-->gender(["Choisir Genre"]);
@@ -26,7 +25,6 @@ subgraph Menu
   gender-->female[\Femme\];
   female-->start["Début du jeu"];
   male-->start;
-  end
   start==>quest["Commencer première quête"];
   quest--->Element(["Choisi ton élément: Feu, Eau, Terre, Air"])
   Element-->air["Niveau #1 L'air"]
