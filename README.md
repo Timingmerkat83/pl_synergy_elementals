@@ -18,6 +18,7 @@ title: Mon graphique de mon scénarimage
 ---
 graph TD;
   markdown["Démarrage du jeu"]--> menu(Menu principal)
+subgraph Menu
   menu-->new["Nouvelle partie"];
   menu-- Partie déjà créé?-->load["Charger partie"];
   new-->gender(["Choisir Genre"]);
@@ -25,11 +26,10 @@ graph TD;
   gender-->female[\Femme\];
   female-->start["Début du jeu"];
   male-->start;
-  
+  end
   start==>quest["Commencer première quête"];
   quest--->Element(["Choisi ton élément: Feu, Eau, Terre, Air"])
   Element-->air["Niveau #1 L'air"]
-  subgraph jeu
   air-->levelair("Trouver un moyen de retirer l'air toxique avec ton élément choisi")
   levelair--Si tu es un **homme** -->terre["Niveau #2 La terre"]
   terre-->levelearth("L'environnement est en feu, trouve un moyen d'éteindre de l'éteindre")
@@ -38,7 +38,6 @@ graph TD;
   terre<-->eau
   levelwater & levelearth-->feu["Niveau #4 Le feu"]
   feu-->levelfire("La ville est inondée! Trouve un moyen de mettre cet eau à sec")
-  end
   gameover-->menu
   levelair & levelearth & levelwater & levelfire --Égnime échoué-->gameover["Fin de la partie"]
   levelfire-->epilogue((("La balance entre les éléments a été restauré")))
