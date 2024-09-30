@@ -70,3 +70,4 @@ La technologie qui sera utilisé:
 
 - Unity pour le visuel.
 - Reaper pour le son des éléments
+- After Effect pour l'animation
