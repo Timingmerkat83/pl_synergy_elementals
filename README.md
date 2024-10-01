@@ -52,7 +52,7 @@ graph TD;
   style eau fill: #005493
   style feu fill: #FF7500
   style menu fill: #ff7270, stroke: red, stroke-width: 5px
-  linkStyle default stroke: blue 
+  linkStyle default stroke: blue
 
 ```
 
@@ -69,3 +69,8 @@ La technologie qui sera utilisé:
 - Unity pour le visuel.
 - Reaper pour le son des éléments
 - After Effect pour l'animation
+
+### Matériel
+
+- Speakers
+- Tablette ou écran d'ordi
