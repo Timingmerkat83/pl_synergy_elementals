@@ -74,3 +74,80 @@ La technologie qui sera utilisé:
 
 - Speakers
 - Tablette ou écran d'ordi
+
+## Synoptique
+![synoptique](src/synoptique.drawio.png)
+
+## Planification
+
+1. **Recherche et développement**
+   - Analyser les attributs uniques de chaque élément.
+   - Étudier des mécaniques de gameplay basées sur les éléments (ex : casse-têtes inspirés de la nature des éléments).
+
+2. **Pré-production**
+   - Conception des biomes pour chaque élément, en définissant leur ambiance visuelle et sonore.
+   - Création de concept art et de maquettes pour visualiser les niveaux.
+   - Développement du scénario et des dialogues.
+
+3. **Production**
+   - **Graphisme** : Création des textures et modèles 3D pour les biomes et Gardiens.
+   - **Audio** : Enregistrement des sons d'ambiance pour chaque élément avec Reaper.
+   - **Programmation** : Intégration des mécaniques de jeu dans Unity et gestion des interactions selon l'élément sélectionné.
+
+4. **Post-production**
+   - Tests et débogage pour assurer une expérience de jeu fluide.
+   - Ajustements finaux sur les animations (After Effects) et les effets sonores.
+   - Préparation de la documentation finale pour le projet.
+
+## Simulation
+L'expérience de jeu commence dans un environnement correspondant à l'élément choisi. Le joueur peut explorer différents biomes et interagir avec l’environnement et les casses-têtes. La résolution de chaque casse-tête permettra au joueur de progresser vers le prochain Gardien corrompu, restaurer l'harmonie et avancer dans l'histoire.
+
+## Scénarimage
+Chaque élément dispose d'une série de scènes structurées ainsi :
+![storyboard](src/elemental_synergie_storyboard.jpg)
+
+## Identification des ressources humaines disponibles
+1. Game Designer
+   - Responsable de la conception du gameplay et des mécaniques basées sur chaque élément.
+   - Création de casse-têtes adaptés à chaque élément.
+   - Gestion des tests de gameplay pour assurer une expérience fluide.
+2. Développeur Unity
+   - Connaissance approfondie d’Unity et des configurations VR.
+   - Capacité à coder les interactions et les logiques de jeu pour chaque élément.
+   - Optimisation des performances VR et intégration des modèles 3D.
+3. Artiste 3D
+   - Création des modèles, textures et environnements pour chaque biome élémentaire.
+4. Animateur / Motion Designer
+   - Création d’effets visuels et transitions entre biomes avec After Effects.
+5. Sound Designer
+   - Enregistrement et édition des sons d'ambiance pour chaque élément avec Reaper.
+6. Scénariste / Concepteur Narratif
+   - Écriture de l’histoire, des dialogues et des descriptions de quêtes.
+   - Travail avec le game designer pour intégrer les éléments narratifs aux casse-têtes.
+
+## Devis Technique
+### Logiciels
+- **Moteur de jeu** : Unity pour le développement et l’optimisation VR.
+- **Logiciel d’audio** : Reaper pour la création et l’édition des sons d'ambiance et effets sonores propres à chaque élément.
+- **Animation et effets** : After Effects pour les animations visuelles (par exemple, les transitions entre les éléments).
+### **Matériel** : 
+  - X2 Haut-parleurs pour les tests d’immersion sonore.
+  - X1 Tablette ou écran d'ordinateur pour la gestion des assets et les contrôles de développement.
+  - X1 Casque VR pour le visuel de l'expérience.
+
+## Inventaire Multimédia
+
+| Type         | Description                               | Logiciel        |
+|--------------|-------------------------------------------|-----------------|
+| **Visuel**   | Modèles 3D, textures des biomes, UI       | Unity          |
+| **Audio**    | Sons d'ambiance, effets sonores, musique  | Reaper         |
+| **Audio**    | Ambiance, immerssion  | QLC         |
+| **Animation**| Transitions et effets visuels             | After Effects  |
+| **Texte**    | Scénario, dialogues et instructions       | Notepad++, Unity |
+| **UI**       | Icônes, menus adaptés aux éléments        | Unity          |
+
+---
+
+**Auteur** : _Pierre-Luc Proulx_
+
+---
