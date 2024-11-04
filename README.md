@@ -138,9 +138,10 @@ Chaque élément dispose d'une série de scènes structurées ainsi :
 
 | Type de matériel        | Quantité | Description                             |
 |-------------------------|----------|-----------------------------------------|
-| **Haut-parleurs**       | 2        | Pour les tests d’immersion sonore.     |
+| **Haut-parleurs**       | 4        | Pour les tests d’immersion sonore.     |
+| **Carte de son**       | 1        | Pour transmettre le son aux speakers     |
 | **Tablette ou écran**   | 1        | Pour la gestion des assets et le développement. |
-| **Casque VR**           | 1        | Pour l'expérience visuelle immersive.  |
+| **Ordinateur**           | 1        | Pour l'expérience visuelle immersive.  |
 
 ## Inventaire Multimédia
 
