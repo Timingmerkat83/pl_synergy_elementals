@@ -127,13 +127,20 @@ Chaque élément dispose d'une série de scènes structurées ainsi :
 
 ## Devis Technique
 ### Logiciels
-- **Moteur de jeu** : Unity pour le développement et l’optimisation VR.
-- **Logiciel d’audio** : Reaper pour la création et l’édition des sons d'ambiance et effets sonores propres à chaque élément.
-- **Animation et effets** : After Effects pour les animations visuelles (par exemple, les transitions entre les éléments).
-### **Matériel** : 
-  - X2 Haut-parleurs pour les tests d’immersion sonore.
-  - X1 Tablette ou écran d'ordinateur pour la gestion des assets et les contrôles de développement.
-  - X1 Casque VR pour le visuel de l'expérience.
+
+| Type de logiciel        | Description                                      |
+|-------------------------|--------------------------------------------------|
+| **Moteur de jeu**      | Unity pour le développement et l’optimisation VR. |
+| **Logiciel audio**      | Reaper pour la création et l’édition des sons d'ambiance et effets sonores. |
+| **Animation et effets** | After Effects pour les animations visuelles (transitions entre les éléments). |
+
+### Matériel
+
+| Type de matériel        | Quantité | Description                             |
+|-------------------------|----------|-----------------------------------------|
+| **Haut-parleurs**       | 2        | Pour les tests d’immersion sonore.     |
+| **Tablette ou écran**   | 1        | Pour la gestion des assets et le développement. |
+| **Casque VR**           | 1        | Pour l'expérience visuelle immersive.  |
 
 ## Inventaire Multimédia
 
