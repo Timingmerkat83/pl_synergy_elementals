@@ -76,7 +76,7 @@ La technologie qui sera utilisé:
 - Tablette ou écran d'ordi
 
 ## Synoptique
-![synoptique](src/synoptique.drawio.png)
+![synoptique](img/synoptique.jpg)
 
 ## Planification
 
@@ -104,7 +104,7 @@ L'expérience de jeu commence dans un environnement correspondant à l'élément
 
 ## Scénarimage
 Chaque élément dispose d'une série de scènes structurées ainsi :
-![storyboard](src/elemental_synergie_storyboard.jpg)
+![storyboard](img/elemental_synergie_storyboard.jpg)
 
 ## Identification des ressources humaines disponibles
 1. Game Designer
