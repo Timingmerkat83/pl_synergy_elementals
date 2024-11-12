@@ -102,6 +102,7 @@ La technologie qui sera utilisé:
 
 ## Simulation
 L'expérience de jeu commence dans un environnement correspondant à l'élément choisi. Le joueur peut explorer différents biomes et interagir avec l’environnement et les casses-têtes. La résolution de chaque casse-tête permettra au joueur de progresser vers le prochain Gardien corrompu, restaurer l'harmonie et avancer dans l'histoire.
+![Simulation](img/simulation.png)
 
 ## Scénarimage
 Chaque élément dispose d'une série de scènes structurées ainsi :
