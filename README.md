@@ -21,7 +21,6 @@ graph TD;
   menu-->new["Nouvelle partie"];
   menu-- Partie déjà créé?-->load["Charger partie"];
   new-->start
-
   start==>quest["Commencer première quête"];
   quest-->Element(["Choisi ton élément: <br>Feu,<br> Eau,<br> Terre,<br> Air"])
   Element-->air["Niveau #1 L'air"]
