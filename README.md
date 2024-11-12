@@ -70,6 +70,8 @@ La technologie qui sera utilisé:
 
 - Speakers
 - Tablette ou écran d'ordi
+- Projecteur
+- Lumière pour immersion
 
 ## Synoptique
 ![synoptique](img/synoptique.jpg)
