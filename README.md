@@ -99,6 +99,9 @@ La technologie qui sera utilisé:
    - Ajustements finaux sur les animations (After Effects) et les effets sonores.
    - Préparation de la documentation finale pour le projet.
 
+## Plantation 
+![plantation](img/plantation.drawio.png)
+
 ## Simulation
 L'expérience de jeu commence dans un environnement correspondant à l'élément choisi. Le joueur peut explorer différents biomes et interagir avec l’environnement et les casses-têtes. La résolution de chaque casse-tête permettra au joueur de progresser vers le prochain Gardien corrompu, restaurer l'harmonie et avancer dans l'histoire.
 
