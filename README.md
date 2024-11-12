@@ -20,11 +20,8 @@ graph TD;
   markdown["Démarrage du jeu"]--> menu(Menu principal)
   menu-->new["Nouvelle partie"];
   menu-- Partie déjà créé?-->load["Charger partie"];
-  new-->gender(["Choisir Genre"]);
-  gender-->male[/Homme/];
-  gender-->female[\Femme\];
-  female-->start["Début du jeu"];
-  male-->start;
+  new-->start
+
   start==>quest["Commencer première quête"];
   quest-->Element(["Choisi ton élément: <br>Feu,<br> Eau,<br> Terre,<br> Air"])
   Element-->air["Niveau #1 L'air"]
